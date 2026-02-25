@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import Diary from './pages/Diary'
 import Edit from './pages/Edit'
 import Home from './pages/Home'
-import Notfound from './pages/Notfound'
+import NotFound from './pages/NotFound'
 import New from './pages/New'
 
 
@@ -152,7 +152,7 @@ function App() {
           <Route path='/new' element={<New />} />
           <Route path='/edit/:id' element={<Edit />} />
           <Route path='/diary/:id' element={<Diary />} />
-          <Route path='*' element={<Notfound />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </DiaryDispatchContext.Provider>
     </DiaryStateContext.Provider>
